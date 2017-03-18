@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import cfb.com.dailydevelopment3.example1.multiply.UseMultipleStatusActivity;
+import cfb.com.dailydevelopment3.example2.runtimepermission.RunTimePermissionActivity;
+import cfb.com.dailydevelopment3.example3.readcontacts.ReadContactsActivity;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -37,10 +39,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 				startIntent(UseMultipleStatusActivity.class);
 				break;
 			case 1:
-
+				startIntent(RunTimePermissionActivity.class);
 				break;
 			case 2:
-
+				startIntent(ReadContactsActivity.class);
 				break;
 			case 3:
 

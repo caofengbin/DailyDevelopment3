@@ -2,14 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cfb.com.dailydevelopment3">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-                  android:screenOrientation="portrait">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,8 +24,19 @@
             android:name=".example1.multiply.UseMultipleStatusActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".example2.runtimepermission.RunTimePermissionActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name=".example3.readcontacts.ReadContactsActivity" />
+
+        <provider
+            android:name=".example4.contentprovider.DatabaseContentProvider"
+            android:authorities="cfb.com.dailydevelopment3.MyContentProvider"
+            android:enabled="true"
+            android:exported="true"></provider>
     </application>
 
 </manifest>

@@ -15,6 +15,7 @@
         app:content="预发布环境,测试环境,正式环境"
         app:index="0"
         app:textColorN="#0072c6"
-        app:textColorP="#ffffff" />
+        app:textColorP="#ffffff"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

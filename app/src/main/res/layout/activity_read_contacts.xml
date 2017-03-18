@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_read_contacts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cfb.com.dailydevelopment3.example3.readcontacts.ReadContactsActivity">
+
+    <ListView
+        android:id="@+id/myContactsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

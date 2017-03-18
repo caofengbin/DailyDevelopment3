@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">DailyDevelopment3</string>
     <string-array name="main_view_string_array">
-        <item>(1)多状态切换按钮的使用</item>
-        <item>(2)</item>
-        <item>(3)示</item>
+        <item>(1)三状态切换按钮的使用</item>
+        <item>(2)运行时权限处理</item>
+        <item>(3)读取联系人信息</item>
         <item>(4)</item>
         <item>(5)</item>
         <item>(6</item>

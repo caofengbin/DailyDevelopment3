@@ -16,7 +16,17 @@ public class UseMultipleStatusActivity extends AppCompatActivity {
 		myButton.setOnIndexChangedListener(new MultipleStatusButton.OnIndexChangedListener() {
 			@Override
 			public void onChanged(MultipleStatusButton view, int index) {
-				Toast.makeText(UseMultipleStatusActivity.this, "点击了第" + index + "按钮", Toast.LENGTH_SHORT).show();
+				switch(index) {
+					case 0:
+						Toast.makeText(UseMultipleStatusActivity.this, "设置为预发布环境", Toast.LENGTH_SHORT).show();
+						break;
+					case 1:
+						Toast.makeText(UseMultipleStatusActivity.this, "设置为测试环境", Toast.LENGTH_SHORT).show();
+						break;
+					case 2:
+						Toast.makeText(UseMultipleStatusActivity.this, "设置为正式环境", Toast.LENGTH_SHORT).show();
+						break;
+				}
 			}
 		});
 	}
