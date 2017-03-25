@@ -11,6 +11,7 @@ import android.widget.ListView;
 import cfb.com.dailydevelopment3.example1.multiply.UseMultipleStatusActivity;
 import cfb.com.dailydevelopment3.example2.runtimepermission.RunTimePermissionActivity;
 import cfb.com.dailydevelopment3.example3.readcontacts.ReadContactsActivity;
+import cfb.com.dailydevelopment3.example5.gson.GsonActivity;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -45,10 +46,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 				startIntent(ReadContactsActivity.class);
 				break;
 			case 3:
-
+				// 没有相应的Activity跳转实现
 				break;
 			case 4:
-
+				// 使用gson
+				startIntent(GsonActivity.class);
 				break;
 			case 5:
 

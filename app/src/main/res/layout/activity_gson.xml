@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gson"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cfb.com.dailydevelopment3.example5.gson.GsonActivity">
+
+    <Button
+        android:id="@+id/useGsonButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="解析基本的gson"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/useGsonButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用gson泛型语法1"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/useGsonButton3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用gson泛型语法2"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/useGsonButton4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用gson解析null值"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>

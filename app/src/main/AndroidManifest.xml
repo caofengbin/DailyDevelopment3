@@ -36,7 +36,9 @@
             android:name=".example4.contentprovider.DatabaseContentProvider"
             android:authorities="cfb.com.dailydevelopment3.MyContentProvider"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true" />
+
+        <activity android:name=".example5.gson.GsonActivity"></activity>
     </application>
 
 </manifest>
