@@ -5,9 +5,7 @@
 
 仿照iOS的效果实现的一个三状态按钮，效果如下：
 
-<center>
 ![三状态按钮的实现](http://occl9k36n.bkt.clouddn.com/2017_03_23_three_state_button.png)
-</center>
 
 具体代码实现细节可以参考第一个demo中的具体示例。
 
