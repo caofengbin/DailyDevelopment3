@@ -6,12 +6,14 @@
 仿照iOS的效果实现的一个三状态按钮，效果如下：
 
 <center>
-![三状态按钮效果](http://occl9k36n.bkt.clouddn.com/2017_03_23_three_state_button.png)
+![三状态按钮的实现](http://occl9k36n.bkt.clouddn.com/2017_03_23_three_state_button.png)
 </center>
 
 具体代码实现细节可以参考第一个demo中的具体示例。
 
 ## 2.Android运行时权限处理
+
+&emsp;&emsp;比较重要的一个话题，本demo中给出最基本的实现方式。
 
 ## 3.读取系统联系人
 
