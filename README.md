@@ -9,6 +9,7 @@
 ![三状态按钮效果](http://occl9k36n.bkt.clouddn.com/2017_03_23_three_state_button.png)
 </center>
 
+具体代码实现细节可以参考第一个demo中的具体示例。
 
 ## 2.Android运行时权限处理
 
