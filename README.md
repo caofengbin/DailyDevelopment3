@@ -16,3 +16,13 @@
 ## 3.读取系统联系人
 
 ## 4.使用自定义的ContentProvider
+
+## 5.gson的基本使用
+
+## 6.头部悬停ListView的实现
+
+[Github项目地址](https://github.com/JimiSmith/PinnedHeaderListView)
+
+[另外一个不错的实现头部悬停效果的PinnedListView](https://github.com/beworker/pinned-section-listview)
+
+[ Android仿联系人列表分组悬浮列表实现，自定义PinnedHeaderListView实现](http://blog.csdn.net/u010335298/article/details/51150346)

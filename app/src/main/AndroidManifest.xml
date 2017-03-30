@@ -38,7 +38,8 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".example5.gson.GsonActivity"></activity>
+        <activity android:name=".example5.gson.GsonActivity" />
+        <activity android:name=".example6.pinnedlistview.PinnedListViewActivity"></activity>
     </application>
 
 </manifest>

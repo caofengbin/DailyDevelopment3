@@ -12,6 +12,7 @@ import cfb.com.dailydevelopment3.example1.multiply.UseMultipleStatusActivity;
 import cfb.com.dailydevelopment3.example2.runtimepermission.RunTimePermissionActivity;
 import cfb.com.dailydevelopment3.example3.readcontacts.ReadContactsActivity;
 import cfb.com.dailydevelopment3.example5.gson.GsonActivity;
+import cfb.com.dailydevelopment3.example6.pinnedlistview.PinnedListViewActivity;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 				startIntent(GsonActivity.class);
 				break;
 			case 5:
-
+				startIntent(PinnedListViewActivity.class);
 				break;
 			case 6:
 
