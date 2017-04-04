@@ -1,10 +1,12 @@
 package cfb.com.dailydevelopment3.example6.pinnedlistview;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import cfb.com.dailydevelopment3.R;
@@ -52,14 +54,14 @@ public class TestSectionedAdapter extends SectionedBaseAdapter {
 
 	@Override
 	public View getSectionHeaderView(int section, View convertView, ViewGroup parent) {
-		LinearLayout layout;
+		RelativeLayout layout;
 		if (convertView == null) {
 			LayoutInflater inflater = (LayoutInflater) parent.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			layout = (LinearLayout) inflater.inflate(R.layout.header_item, null);
+			layout = (RelativeLayout) inflater.inflate(R.layout.header_item, null);
 		} else {
-			layout = (LinearLayout) convertView;
+			layout = (RelativeLayout) convertView;
 		}
-		TextView provinceText = (TextView) layout.findViewById(R.id.province_name);
+		final TextView provinceText = (TextView) layout.findViewById(R.id.province_name);
 		switch (section) {
 			case 0:
 				provinceText.setText("北京");
@@ -77,6 +79,7 @@ public class TestSectionedAdapter extends SectionedBaseAdapter {
 				provinceText.setText("湖北");
 				break;
 		}
+
 		return layout;
 	}
 

@@ -168,8 +168,35 @@ public class PinnedHeaderListView extends ListView implements AbsListView.OnScro
 		mHeightMode = MeasureSpec.getMode(heightMeasureSpec);
 	}
 
-	public void setOnItemClickListener(PinnedHeaderListView.OnItemClickListener listener) {
-		super.setOnItemClickListener(listener);
+//	public void setOnItemClickListener(PinnedHeaderListView.OnItemClickListener listener) {
+//		super.setOnItemClickListener(listener);
+//	}
+
+	public void setOnItemClickListener(final PinnedHeaderListView.OnItemClickListener listener) {
+		super.setOnItemClickListener(new android.widget.ListView.OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> adapterView, View view, int rawPosition, long id) {
+				SectionedBaseAdapter adapter;
+				if (adapterView.getAdapter().getClass().equals(HeaderViewListAdapter.class)) {
+					HeaderViewListAdapter wrapperAdapter = (HeaderViewListAdapter) adapterView.getAdapter();
+					adapter = (SectionedBaseAdapter) wrapperAdapter.getWrappedAdapter();
+				} else {
+					adapter = (SectionedBaseAdapter) adapterView.getAdapter();
+				}
+				rawPosition = rawPosition - getHeaderViewsCount();
+				if (rawPosition < 0||rawPosition >= adapter.getCount())//if have headerViews or FooterViews They didn't click event
+					return;
+				int section = adapter.getSectionForPosition(rawPosition);
+				int position = adapter.getPositionInSectionForPosition(rawPosition);
+
+				if (position == -1) {
+					listener.onSectionClick(adapterView, view, section, id);
+				} else {
+					listener.onItemClick(adapterView, view, section, position, id);
+				}
+			}
+		});
 	}
 
 	public static abstract class OnItemClickListener implements AdapterView.OnItemClickListener {
