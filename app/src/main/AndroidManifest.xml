@@ -39,7 +39,9 @@
             android:exported="true" />
 
         <activity android:name=".example5.gson.GsonActivity" />
-        <activity android:name=".example6.pinnedlistview.PinnedListViewActivity"></activity>
+        <activity android:name=".example6.pinnedlistview.PinnedListViewActivity" />
+        <activity android:name=".example7.notification.NotificationActivity" />
+        <activity android:name=".example7.notification.Notification2Activity"></activity>
     </application>
 
 </manifest>

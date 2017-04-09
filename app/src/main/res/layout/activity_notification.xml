@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cfb.com.dailydevelopment3.example7.notification.NotificationActivity">
+
+    <Button
+        android:id="@+id/first_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="最基本的通知使用"/>
+
+    <Button
+        android:id="@+id/second_notification"
+        android:layout_below="@+id/first_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="使通知可响应点击事件"/>
+
+    <Button
+        android:id="@+id/third_notification"
+        android:layout_below="@+id/second_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="更加炫酷的通知效果"/>
+
+    <Button
+        android:id="@+id/fourth_notification"
+        android:layout_below="@+id/third_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="富文本效果的通知"/>
+
+
+</RelativeLayout>

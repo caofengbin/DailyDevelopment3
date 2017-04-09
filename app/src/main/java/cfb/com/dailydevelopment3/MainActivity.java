@@ -13,6 +13,7 @@ import cfb.com.dailydevelopment3.example2.runtimepermission.RunTimePermissionAct
 import cfb.com.dailydevelopment3.example3.readcontacts.ReadContactsActivity;
 import cfb.com.dailydevelopment3.example5.gson.GsonActivity;
 import cfb.com.dailydevelopment3.example6.pinnedlistview.PinnedListViewActivity;
+import cfb.com.dailydevelopment3.example7.notification.NotificationActivity;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -57,7 +58,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 				startIntent(PinnedListViewActivity.class);
 				break;
 			case 6:
-
+				// 使用通知
+				startIntent(NotificationActivity.class);
 				break;
 			case 7:
 
