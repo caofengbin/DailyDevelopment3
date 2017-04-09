@@ -38,21 +38,21 @@
 ### (1)通知的基本实现代码
 
 ``` java
-	@OnClick(R.id.first_notification)
-	public void sendFirstNotification() {
-		// 第一步，获取NotificationManager
-		NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-		// 第二步，创建Notification
-		Notification notification = new NotificationCompat.Builder(this)
-				.setContentTitle("通知的标题")
-				.setContentText("通知的内容")
-				.setWhen(System.currentTimeMillis())
-				.setSmallIcon(R.mipmap.ic_launcher)
-				.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
-				.build();
-		// 第三步，发送通知
-		manager.notify(1, notification);
-	}
+@OnClick(R.id.first_notification)
+public void sendFirstNotification() {
+	// 第一步，获取NotificationManager
+	NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+	// 第二步，创建Notification
+	Notification notification = new NotificationCompat.Builder(this)
+			.setContentTitle("通知的标题")
+			.setContentText("通知的内容")
+			.setWhen(System.currentTimeMillis())
+			.setSmallIcon(R.mipmap.ic_launcher)
+			.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
+			.build();
+	// 第三步，发送通知
+	manager.notify(1, notification);
+}
 ```
 
 
@@ -95,4 +95,12 @@ setStyle(new NotificationCompat.BigTextStyle().bigText()
 
 ### (5)使通知展示图片的效果
 
+```java
+.setStyle(new NotificationCompat.BigPictureStyle().bigPicture(BitmapFactory.decodeResource(getResources(), R.drawable.big_image)))
+```
+
 ### (6)设置通知的优先级
+
+``` java
+.setPriority(NotificationCompat.PRIORITY_MAX)
+```
