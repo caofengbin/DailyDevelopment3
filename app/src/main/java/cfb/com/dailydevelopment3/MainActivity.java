@@ -14,6 +14,7 @@ import cfb.com.dailydevelopment3.example3.readcontacts.ReadContactsActivity;
 import cfb.com.dailydevelopment3.example5.gson.GsonActivity;
 import cfb.com.dailydevelopment3.example6.pinnedlistview.PinnedListViewActivity;
 import cfb.com.dailydevelopment3.example7.notification.NotificationActivity;
+import cfb.com.dailydevelopment3.example8.drawtext.DrawTextActivity;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -62,7 +63,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 				startIntent(NotificationActivity.class);
 				break;
 			case 7:
-
+				// 绘图学习
+				startIntent(DrawTextActivity.class);
 				break;
 			case 8:
 

@@ -41,7 +41,8 @@
         <activity android:name=".example5.gson.GsonActivity" />
         <activity android:name=".example6.pinnedlistview.PinnedListViewActivity" />
         <activity android:name=".example7.notification.NotificationActivity" />
-        <activity android:name=".example7.notification.Notification2Activity"></activity>
+        <activity android:name=".example7.notification.Notification2Activity" />
+        <activity android:name=".example8.drawtext.DrawTextActivity"></activity>
     </application>
 
 </manifest>
