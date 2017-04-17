@@ -24,33 +24,13 @@ import cfb.com.dailydevelopment3.R;
 
 public class ExpandListViewActivity extends AppCompatActivity {
 
-	private AnimatedExpandableListView listView;
+	private AnimatedExpandableListView expandListView;
 	private ExampleAdapter adapter;
-
-
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_expand_list_view);
-
-//		final ImageView rotationImage = (ImageView) findViewById(bt_rotationX);
-//		final Animation anim = AnimationUtils
-//				.loadAnimation(this, R.anim.anim);
-//		final Animation anim2 = AnimationUtils
-//				.loadAnimation(this, R.anim.anim2);
-//		anim.setFillAfter(true);
-//		anim2.setFillAfter(true);
-//
-//
-//		rotationImage.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View v) {
-//				rotationImage.startAnimation(anim2);
-//			}
-//		});
-
-
 
 
 		List<GroupItem> items = new ArrayList<>();
@@ -75,27 +55,27 @@ public class ExpandListViewActivity extends AppCompatActivity {
 		adapter = new ExampleAdapter(this);
 		adapter.setData(items);
 
-		listView = (AnimatedExpandableListView) findViewById(R.id.listView);
-		listView.setAdapter(adapter);
+		expandListView = (AnimatedExpandableListView) findViewById(R.id.listView);
+		expandListView.setAdapter(adapter);
 
-		listView.setGroupIndicator(null);
+		expandListView.setGroupIndicator(null);
 
 		// In order to show animations, we need to use a custom click handler
 		// for our ExpandableListView.
-		listView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
+		expandListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
 
 			@Override
 			public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
 				// We call collapseGroupWithAnimation(int) and
 				// expandGroupWithAnimation(int) to animate group
 				// expansion/collapse.
-				if (listView.isGroupExpanded(groupPosition)) {
-					listView.collapseGroupWithAnimation(groupPosition);
+				if (expandListView.isGroupExpanded(groupPosition)) {
+					expandListView.collapseGroupWithAnimation(groupPosition);
 					// 展开状态，启动收缩的动画
 					adapter.setIndicatorState(groupPosition, true);
 					adapter.setArrowInvisible(groupPosition, false);
 				} else {
-					listView.expandGroupWithAnimation(groupPosition);
+					expandListView.expandGroupWithAnimation(groupPosition);
 					// 收缩状态，启动展开的动画
 					adapter.setIndicatorState(groupPosition, false);
 					adapter.setArrowInvisible(groupPosition, true);
@@ -107,7 +87,7 @@ public class ExpandListViewActivity extends AppCompatActivity {
 
 		});
 
-		listView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+		expandListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
 			@Override
 			public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
 				// Log.e("fengbincao","点击了分组：" + groupPosition + "中的第：" + childPosition + "个元素");
@@ -117,7 +97,7 @@ public class ExpandListViewActivity extends AppCompatActivity {
 
 		for(int i = 0; i < adapter.getGroupCount(); i++){
 
-			listView.expandGroup(i);
+			expandListView.expandGroup(i);
 //			adapter.setIndicatorState(i, true);
 //			adapter.setArrowInvisible(i, false);
 
