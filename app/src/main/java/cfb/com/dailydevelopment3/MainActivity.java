@@ -15,6 +15,7 @@ import cfb.com.dailydevelopment3.example5.gson.GsonActivity;
 import cfb.com.dailydevelopment3.example6.pinnedlistview.PinnedListViewActivity;
 import cfb.com.dailydevelopment3.example7.notification.NotificationActivity;
 import cfb.com.dailydevelopment3.example8.drawtext.DrawTextActivity;
+import cfb.com.dailydevelopment3.example9.expand.ExpandListViewActivity;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 				startIntent(DrawTextActivity.class);
 				break;
 			case 8:
-
+				startIntent(ExpandListViewActivity.class);
 				break;
 		}
 	}

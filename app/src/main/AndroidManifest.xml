@@ -38,11 +38,41 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".example5.gson.GsonActivity" />
-        <activity android:name=".example6.pinnedlistview.PinnedListViewActivity" />
-        <activity android:name=".example7.notification.NotificationActivity" />
-        <activity android:name=".example7.notification.Notification2Activity" />
-        <activity android:name=".example8.drawtext.DrawTextActivity"></activity>
+        <activity
+            android:name=".example5.gson.GsonActivity"
+            android:authorities="cfb.com.dailydevelopment3.MyContentProvider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".example6.pinnedlistview.PinnedListViewActivity"
+            android:authorities="cfb.com.dailydevelopment3.MyContentProvider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".example7.notification.NotificationActivity"
+            android:authorities="cfb.com.dailydevelopment3.MyContentProvider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".example7.notification.Notification2Activity"
+            android:authorities="cfb.com.dailydevelopment3.MyContentProvider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".example8.drawtext.DrawTextActivity"
+            android:authorities="cfb.com.dailydevelopment3.MyContentProvider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".example9.expand.ExpandListViewActivity"
+            android:authorities="cfb.com.dailydevelopment3.MyContentProvider"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>
