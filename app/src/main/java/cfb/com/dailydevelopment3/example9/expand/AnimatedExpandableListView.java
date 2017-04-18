@@ -99,7 +99,7 @@ public class AnimatedExpandableListView extends ExpandableListView {
 	/**
 	 * The duration of the expand/collapse animations
 	 */
-	private static final int ANIMATION_DURATION = 500;
+	private int ANIMATION_DURATION = 500;
 
 	private AnimatedExpandableListAdapter adapter;
 
@@ -212,7 +212,7 @@ public class AnimatedExpandableListView extends ExpandableListView {
 		// collapse animation.
 		adapter.startCollapseAnimation(groupPos, firstChildPos);
 
-		// Force the listview to refresh it's views
+		// Force the listView to refresh it's views
 		adapter.notifyDataSetChanged();
 		return isGroupExpanded(groupPos);
 	}
@@ -244,7 +244,7 @@ public class AnimatedExpandableListView extends ExpandableListView {
 	 * adapters used with AnimatedExpandableListView MUST extend this class.
 	 */
 	public static abstract class AnimatedExpandableListAdapter extends BaseExpandableListAdapter {
-		private SparseArray<GroupInfo> groupInfo = new SparseArray<GroupInfo>();
+		private SparseArray<GroupInfo> groupInfo = new SparseArray<>();
 		private AnimatedExpandableListView parent;
 
 		private static final int STATE_IDLE = 0;
@@ -495,7 +495,7 @@ public class AnimatedExpandableListView extends ExpandableListView {
 	}
 
 	private static class DummyView extends View {
-		private List<View> views = new ArrayList<View>();
+		private List<View> views = new ArrayList<>();
 		private Drawable divider;
 		private int dividerWidth;
 		private int dividerHeight;
