@@ -15,6 +15,16 @@
 
 ## 3.读取系统联系人
 
+通过系统的：
+``` java
+getContentResolver().query(ContactsContract.CommonDataKinds. 
+Phone.CONTENT_URI, null, null, null, null); 
+```
+
+访问手机上的联系人信息。
+
+---
+
 ## 4.使用自定义的ContentProvider
 
 ---
